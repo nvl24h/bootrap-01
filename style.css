@@ -1,0 +1,25 @@
+.navbar-brand img {
+  max-height: 30px;
+  width: 130px;
+  object-fit: cover;
+}
+
+.nav-link.active {
+  color: aqua !important;
+}
+
+.btn-outline-success {
+  color: white;
+}
+
+.feature-item img {
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+}
+
+.subcribe {
+  background-image: url(./img/subscribe.jpg);
+  background-size: cover;
+  background-position: center;
+}
