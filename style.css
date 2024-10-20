@@ -27,3 +27,8 @@
 .brand-icon {
   max-width: 130px;
 }
+
+.sticky-footer {
+  backdrop-filter: blur(8px);
+  background-color: #cccccc67;
+}
