@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Project</title>
+</head>
+
+<body class="bg-light pt-5">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light border-bottom small fixed-top">
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo-tuhoc-light.png" alt="logo tuhoc.cc" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- menu item -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- btn dung the a dang ky va dang nhap-->
+                <div class="me-2 d-flex flex-lg-row flex-column gap-2 flex-md-row">
+                    <a href="#" class="btn btn-danger btn-sm d-inline-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="16px" hight="16px"
+                            class="me-2">
+                            <path fill="#ffffff"
+                                d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM504 312l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z" />
+                        </svg>
+                        Sign-up for free</a>
+
+                    <a href="#" class="btn btn-warning btn-sm d-inline-flex justify-content-center align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16px" height="16px"
+                            class="me-2">
+                            <path fill="#ffffff"
+                                d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z" />
+                        </svg>
+                        Login</a>
+                </div>
+
+                <!-- Form search -->
+                <form class="d-flex mt-lg-0 mt-2" role="search">
+                    <input class="form-control me-0 form-control-sm rounded-end-0" type="search"
+                        placeholder="Search for" aria-label="Search" />
+                    <button class="btn btn-outline-success btn-sm rounded-start-0 bg-primary text-light" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" hight="16px" color="currentColor"
+                            viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <section class="py-5">
+        <div class="container">
+            <!-- contact header -->
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="py-3 mb-4 text-center">
+                        <h1 class="fs-3 fw-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia
+                            dignissimos aut</h1>
+                        <p class="fs-6 fw-normal text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatum impedit blanditiis dolore
+                            modi doloremque adipisci voluptas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- contact content -->
+            <div class="row">
+                <!-- item 1 -->
+                <div class="col-md-4 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header">F.A.Q</div>
+                        <div class="card-body p-5">
+                            <p class="m-0 small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+                                porro dolorum
+                                quibusdam quisquam consequatur</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-success btn-sm d-inline-flex align-items-center" href="./faq.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question-diamond-fill me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM5.495 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z">
+                                    </path>
+                                </svg>
+                                See FAQ's
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 2 -->
+                <div class="col-md-4 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header">Regarding the course</div>
+                        <div class="card-body p-5">
+                            <p class="m-0 small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+                                porro dolorum
+                                quibusdam quisquam consequatur</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-success btn-sm d-inline-flex align-items-center"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-info-circle-fill me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z">
+                                    </path>
+                                </svg>
+                                Get Help
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- item 3 -->
+                <div class="col-md-4 mb-3">
+                    <div class="card text-center">
+                        <div class="card-header">Freelance Project</div>
+                        <div class="card-body p-5">
+                            <p class="m-0 small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
+                                porro dolorum
+                                quibusdam quisquam consequatur</p>
+                        </div>
+                        <div class="card-footer">
+                            <a class="btn btn-success btn-sm d-inline-flex align-items-center" href="#!">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-send-check-fill me-2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 1.59 2.498C8 14 8 13 8 12.5a4.5 4.5 0 0 1 5.026-4.47L15.964.686Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z">
+                                    </path>
+                                    <path
+                                        d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z">
+                                    </path>
+                                </svg>
+                                Send Request
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header text-white bg-dark ">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Get Help</h1>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <div class="card-body">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-2">
+                                        <input placeholder="Name" type="text" name="" id=""
+                                            class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-2">
+                                        <input placeholder="Email" type="email" name="" id=""
+                                            class="form-control form-control-sm">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="mb-2">
+                                        <input placeholder="Your Question Title" type="text" name="" id=""
+                                            class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-2">
+                                        <textarea placeholder="Question in detail" rows="5"
+                                            class="form-control form-control-sm" name="" id=""></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-2">
+                                        <button
+                                            class="btn btn-success btn-sm d-inline-flex align-items-center w-100 justify-content-center"
+                                            type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-envelope-check-fill me-2"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z">
+                                                </path>
+                                                <path
+                                                    d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z">
+                                                </path>
+                                            </svg>
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- subcribe -->
+    <section class="subcribe py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h5 class="text-white fs-4 text-md-end fw-lighter">Subscribe for newsletters
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <form class="d-flex mt-lg-0 mt-2" role="subcribe">
+                        <input class="form-control me-0 form-control-sm rounded-end-0" type="email"
+                            placeholder="Your email" aria-label="subcribe" />
+                        <button
+                            class="btn btn-outline-success btn-sm rounded-start-0 bg-primary text-light d-flex align-items-center"
+                            type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="#ffffff"
+                                    d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                            </svg>
+                            Subcribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-5 text-bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="brand-icon">
+                        <img class="pb-3 img-fluid" src=" ./img/logo-tuhoc-light.png" alt="">
+                        <address class="small text-secondary">
+                            Jayanagar, Bangalore,<br>
+                            Karnataka, India. <br>
+                            560011
+                        </address>
+                        <p class="small text-secondary">contact@tuhoc.cc</p>
+                    </div>
+                </div>
+                <div class="col-md-2 text-md-center">
+                    <h6>Main menu</h6>
+                    <ul class="list-unstyled text-md-center">
+                        <li>
+                            <a class="text-decoration-none text-secondary small " href="#">Link item 1</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-secondary small " href="#">Link item 2</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-secondary small " href="#">Link item 3</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-secondary small " href="#">Link item 4</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-secondary small " href="#">Link item 5</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 text-md-center">
+                    <h6>Misc</h6>
+                    <ul class="list-unstyled text-md-center">
+                        <li>
+                            <a class="text-decoration-none text-secondary small " href="#">Link item 1</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-secondary small " href="#">Link item 2</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-secondary small " href="#">Link item 3</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-secondary small " href="#">Link item 4</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-secondary small " href="#">Link item 5</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-5 ">
+                    <h6>Follow us</h6>
+                    <div class="mt-3 d-flex gap-2">
+                        <a href=" #"
+                            class="btn d-inline-flex btn-sm align-items-center rounded-pill px-md-3 gap-2 bg-success text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16px" higt="16px">
+                                <path fill="#ffffff"
+                                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                            </svg>
+                            <span class="d-md-block d-none">Facebook</span>
+                        </a>
+                        <a href="#"
+                            class="btn d-inline-flex btn-sm align-items-center rounded-pill px-md-3 gap-2 bg-success text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16px" higt="16px">
+                                <path fill="#ffffff"
+                                    d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z" />
+                            </svg>
+                            <span class="d-md-block d-none">Twitter</span>
+                        </a>
+                        <a href="#"
+                            class="btn d-inline-flex btn-sm align-items-center rounded-pill px-md-3 gap-2 bg-success text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="16px" higt="16px">
+                                <path fill="#ffffff"
+                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                            </svg>
+                            <span class="d-md-block d-none">Youtube</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="copyright py-3 bg-black">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <p class="text-center small m-0 text-white">Copyright © 2030. Gà Lại Lập Trình</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile PD -->
+    <div class="mobile-padding pt-5 pb-4 d-md-none bg-black"></div>
+
+    <!-- Sticky footer -->
+    <div class="sticky-footer d-md-none d-flex d-block py-3 justify-content-center border-top fixed-bottom">
+        <a href="#"
+            class="btn px-3 fw-bold d-inline-flex justify-content-center align-items-center gap-2 text-center text-white rounded-pill btn-warning">
+            <svg xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="16px" hight="16pc">
+                <path fill="#ffffff"
+                    d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7l131.7 0c0 0 0 0 .1 0l5.5 0 112 0 5.5 0c0 0 0 0 .1 0l131.7 0c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2L224 304l-19.7 0c-12.4 0-20.1 13.6-13.7 24.2z" />
+            </svg>
+            Sign-up for free
+        </a>
+    </div>
+
+
+    <!-- script -->
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
